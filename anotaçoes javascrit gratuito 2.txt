@@ -1,0 +1,350 @@
+anotaçoes javascrit gratuito 2
+
+1) variáveis e constantes
+
+a) váriavel é uma objeto com valor armazenado que pode sofrer alterações: 
+uma variavel deve ser escritas em Camel case que é a primeira palavra em caixa baixa e as seguintes com a primeira
+letra maiuscula. 
+
+- para criar uma variavel usamos escrevemos: var ou let, após isso escrevemos o 
+nome da variável em camel case, depois colocamos o sinal de "=" que significa 
+atribuição é usado para definir o valorda variável, após o sinal de = escrevemos 
+o valor que queremos inserir na variável.
+
+exemplo: var variavelDoThye = "Vai pra casa hoje.";
+
+- usamos as aspas " " quando queremos que a informação seja lida igual um texto.
+
+b)Constantes: é objeto com um valor definido que não sofre alteração. escrevemos
+= a variável mas nao usamos var e sim "const"
+
+const duraçãoMaximaDeAlgo = "12 meses";
+
+- ponto e virgula no final serve pra indicar que a variavel ou a constante foi 
+encerrada.
+
+2)Tipos Primitivos: são tipos basicos de dados presentes nas linguagens de 
+programação, utilizados para escrever os programas de computador.
+
+a) Existem 3 tipos primitivos 
+
+- String: usado pra armazenar caracteres, na pratica serve pra criar textos vem 
+acompanhada de aspas duplas ou simples
+
+ex: "texto" ou 'texto'
+
+- Number: Como o nome já diz armazenar valores numéricos, serve para atribuir um 
+valor numérico para algo dentro da programação. Não precisa de aspas.
+
+ex: 2  -21  3.75
+
+Boolean: serve pra atribuir um valor de verdadeiro ou falso a um objeto dentro do 
+programa. Tem que ser escrito em inglês
+
+ex: true ou false 
+
+typeof: comando usado para ler o tipo da variavel ou da constante
+
+3) Operadores aritmeticos
+
+a) temos: soma(+), subtração(-), divisão(/), exponenciação (**), módulo(%)
+
+- os unicos que merecem explicação é o de exponenciação e o módulo. Exponenciação
+é o numero de vezes que um numero se multiplica por ele mesmo 
+
+ex: 2**3 = 2³ = 2*2*2
+
+- o módulo calcula o resto da divisao de um numero por outro.
+
+4%2 = 0 5%2 = 1
+
+o módulo pode ser usado para saber se um numero é par pq se um número nao é 
+divisível por 2 nao é par.
+
+4) Operadores de Comparação 
+
+a)operadores de comparação são: 
+
+> maior
+>= maior ou igual
+< menor
+<= menor ou igual
+=== igualdade
+!== desigualdade
+
+== igualdade
+!= desigualdade
+
+5) Operadores lógicos 
+
+- and, e, && : as duas condições precisam ser verdadeiras para a afirmativa ser
+verdadeira na tabela verdade.
+
+- ou, || : apenas uma afirmação precisa ser verdadeira para a afirmação ser 
+verdadeira, para ser falsa apenas se as duas afirmações forem falsas.
+
+6) Estruturas condicionais
+
+a)são estruturas que simbolizam a causa e efeito, Se...senão 
+
+ex: "se estudo entao aprendo senão não aprendo"
+
+- se = if senão= else: usamos o "if" e o "else" na programação pra indicar o "se"
+e o "senao" respectivamente.
+
+- fluxograma lógico: metodo para traduzir a linguagem normal para linguagem de 
+computação.
+
+Frase: "Se nota do desafio for 100 então estará aprovado senao será reprovado"
+
+a)passando para linguagem de computador: 
+
+-ideia principal:
+
+nota do desafio >= 100   
+true: aprovado
+false reprovado
+
+- tradução
+
+normal: nota do desafio
+camel case: notaDoDesafio
+
+- criação da condição: 
+
+if = aprovado
+else = reprovado
+
+b)código de estrutura condicional simples
+
+- primeiro passo: declaração da váriavel
+
+ex: var notaDesafio = 150
+
+- segundo passo: criamos a primeira parte da condicional "if" e colocamos entre
+parenteses a ideia principal
+
+ex: if(notaDoDesafio >=100)
+
+- terceiro passo criação do bloco de código com chaves {}, dividimos o bloco de 
+codigo em função e informação
+
+ex: var notaDoDesafio = 150
+
+if(notaDoDesafio >= 100) {
+   função("informação")
+}
+
+- 4 passo criação do else que é basicamente oq acontece se a condição nao for 
+atendida
+
+var notaDoDesafio = 150
+
+if(notaDoDesafio >= 100) {
+   função(informação)
+} else {
+   função("informação")
+}
+
+- quinto passo: definir o que queremos que o código faça e colocarmos na função e
+depois colocar a informação desejada nos parenteses
+
+- no caso usaremos console.log para imprimir a informação desejada na tela do 
+console 
+
+var notaDoDesafio = 150
+
+if(notaDoDesafio >= 100) {
+   console.log("aprovado")
+} else {
+   console.log("reprovado")
+}
+
+c) Estrutura condicional encadeada
+
+- é usada quando temos mais de uma condição na nossa estrutura usamos o se "if" 
+na, condição 1, na condição 2 usamos o senão se "else if", por fim usamos 
+o senão "else"
+
+ex: Se o sinal ficar verde siga em frente! Senão se estiver amarela preste 
+atenção a luz ficará vermelha. Senão pare a luz está vermelha.
+
+- Ideia principal: 
+
+corDoSinal = verde 
+true: siga em frente
+falso: ir para segunda condição
+
+corDoSinal = amarelo
+true: Atenção o sinal ficará vermelho
+falso: voltar a primeira condição ou cor do sinal vermelha
+
+corDoSinal = vermelha
+true: Pare sinal vermelho
+falso
+
+- já usamos camel case pra poupar tempo
+
+- criamos as condicionais 
+
+if corDoSinal = verde = Siga em frente
+else if corDoSinal = amarelo = Atenção! O Sinal ficará vermelho
+else: Pare! Sinal vermelho.
+
+- criação do código
+
+1º - passo declaração da variavel: 
+
+var corDoSinal = "Verde";
+
+2º - passo criação da primeira condição:
+
+var corDoSinal = "Verde";
+
+if(corDosinal === "Verde"); {
+   console.log ("Siga em frente");
+}
+
+3º - passo criação da segunda condição
+
+var corDoSinal = "Verde";
+
+if(corDosinal === "Verde"); {
+   console.log ("Siga em frente");
+
+} else if (corDoSinal === "Amarelo") {
+     console.log("Atenção, sinal ficará Vermelho");
+
+} 
+
+4º passo crie a parte do senão(else)
+
+var corDoSinal = "Verde";
+
+if(corDosinal === "Verde"); {
+   console.log ("Siga em frente");
+
+} else if (corDoSinal === "Amarelo") {
+     console.log("Atenção, sinal ficará Vermelho");
+
+} else {
+     console.log("Sinal VERMELHO! PARE!);
+}
+
+5º passo pulamos o quinto passo para agilizar o processo abaixo deixarei o 
+esqueleto do código
+
+var variavel = valor;
+
+if(variavel === valor); {
+   função(informação);
+
+} else if (variavel === valor) {
+     função(informação);
+
+} else {
+     função(informação);
+}
+
+7) Estrutura de repetição looping
+
+a)comece declarando a variavel principal(vP
+
+ex: var vP = [ "X", "Y", "Z"]; 
+
+b) depois organize a estrutura de repetição
+
+- comece com o "for" depois parentese 
+
+ex: for(
+
+- dentro do parentese crie outra variavel auxiliar(vA) e defina o seu valor
+
+ex: for(vA = 0;
+
+- defina a relação de grandeza da variavel principal em relação a variavel 
+auxiliar usando o .length na variavel principal dentro do parentese
+
+ex: for(vA = 0; vA < vP.length;
+
+- defina o incremento que é o numero de espaços que a repetição vai percorrer
+pode usar index + (n) ou usar index ++, sendo n = ao numero desejado, index ++ 
+percorre 1 unidade pode usar index - (n) ou index-- também.
+
+ex: for(vA = 0; vA < vP.length; vA++)
+
+- crie o codigo e depois crie uma variavel chamada de variavel auxiliar do 
+codigo atribua a ela um valor ou uma informação.
+
+ex: for(vA = 0; vA < vP.length; vA++) {
+     var vAC = informação
+}
+
+- add a essa informação a vP com um array contendo a vA: vP[vA]
+
+ex: ex: for(vA = 0; vA < vP.length; vA++) {
+     var vAC = informação + vP[vA] + informação;
+}
+
+- imprima os valores do codigo na tela usando "console.log(vAC)"
+
+for(vA = 0; vA < vP.length; vA++) {
+     var vAC = informação + vP[vA] + informação;
+     console.log(vAC)
+}
+
+- Código ficará assim
+
+var vP = [ "X", "Y", "Z"];
+
+for(vA = 0; vA < vP.length; vA++) {
+     var vAC = informação + vP[vA] + informação;
+     console.log(vAC)
+}
+
+- Tambem podemos nomear da seguinte forma:
+
+vP = variavel principal
+
+for= abertura do looping
+
+vA = declaração de contador(dC)
+
+Relação de grandeza vP/vA, pode ser chamado de teste da condição
+
+Incremento ou Decremento da declaração do contador
+
+Bloco de códigos: composto por uma variavel e sua atribuição + o codigo a ser
+executado. As vezes só tem o código.
+
+2) CURIOSIDADES 2
+
+- código pra brincar sóletra as frases
+
+
+function converteStringParaArray(frase) {
+
+
+    var resultado = []
+
+for (var index = 0; index < frase.length; index++){ 
+    resultado.push(frase[index]);
+}
+    
+    
+
+  return resultado;
+}
+
+function main() {
+    const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
+
+    const frase = readLine();
+
+    const result = converteStringParaArray(frase);
+
+    ws.write(result.join('\n') + '\n');
+
+    ws.end();
+}
+

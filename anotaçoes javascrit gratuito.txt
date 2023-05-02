@@ -1,0 +1,511 @@
+Curso de javascript gratuito trybe
+
+1) aula 1 - blablabla
+
+2) aula 2 - Variaveis e Constantes
+
+- Camel Case: quando vc escreve com a primeira palavra em letra minuscula e 
+as outras com letra maiuscula na primeira letra. camelCaseTutorial
+
+MHackerRank123@
+
+- Variaveis e contantes
+var é variavel
+let tbm é
+- const é constante
+
+- códigos:
+
+codigo variavel: var elementoCriado = "sei lá";
+codigo constante: var elementoCriado = "sei lá";
+codigo constante: constante elementoCriado = "sei lá";
+
+3) Aula 3 Tipos primitivos
+
+- existem 3 tipos 
+
+string: representa textos
+number: representa números
+boolean: representa verdadeiro ou falso (true or false)
+https://www.google.com/doodles/celebrating-satyendra-nath-bose
+- codigos para texto requerem " " ou ' '
+
+var nomeCompleto = "Ana Carolina Matos de Sousa Ferraz"; 
+
+- codigos para numero nao utilizam aspas
+
+Var idadeDaCarol = 21;
+Var salário = 3500.80;
+
+- codigos boolean: utilizam verdadeiro ou falso
+
+- typeof:comando que diz se o objeto é do tipo booleano, number ou string 
+
+4) Operadores Lógicos E e Ou
+
+No caso do "E" (&&) só da verdadeiro se as duas variaveis forem verdadeiras
+
+No caso do "Ou" (||) Só da falso se as duas variaveis forem Falsas 
+
+
+5) Operadores aritmeticos
+
+adição:  a + b
+
+subtração: a - b 
+
+multiplicação: a * b
+
+divisão: a/b
+
+exponenciação: 2** 3
+
+módulo(resto): a % b
+
+6) Operadores de Comparação
+
+maior: >
+maior ou igual: >= 
+menor: <
+menor ou igual: <=
+igualdade: ===
+desigualdade: !==
+
+7) Estruturas condicionais
+
+a) estrutura condicional simples
+
+- O parentese é usado para priorizar a condição no comando
+é usado após o "if" e após o codigos do "else"
+Exemplo: "if (condição)", e "else codigo(condição)"
+
+- As chaves devem 
+ser usadas obrigatoriamente para delimitar um bloco de código
+
+if (condição) { 
+bloco de codigos } else { bloco de codigos (condição); 
+}
+
+- If/Else (se/senão)
+- console.log: imprime valores na tela 
+
+- if (condição) 
+{codigo(condição)} else {
+código(condição) }
+
+- Exemplo de código:
+
+var notaDodesafio = 150;
+if (notaDoDesafio >= 100) {
+    console.log ("Aprovado");
+} else {
+    console.log ("Não aprovado");
+}     
+
+b) estrutura condicional encadeada
+
+- usada quando precisamos adicionar mais de uma condição na estrutura
+
+if (condição 1) {
+} else if (condição 2) {
+} else {
+}
+
+- Exemplo de codigo
+
+var luzSemaforo = "verde";
+
+if (luzSemaforo === "verde") {
+    console.log("Siga em frente");
+} else if (luzSemaforo === "Amarela") {
+    console.log("Atenção sinal ficará vermelho");
+} else {
+    console.log("Sinal vermelho! Pare!")
+}
+
+8) Arrays
+
+- definição: lista capaz de armazenar conjuntos de valores
+
+- com a array é mais facil de manipular as informações dentro do conjunto(adicionar,
+remover ou atualizar informações).
+
+- como usar: use os cochetes [] insira as informações dentro separadas por ","
+
+- adicionar informações use o após o nome da variavel "variavel.push("objeto");"
+
+- Códigos usados na aula
+
+var listaDeNomes = ["Joana", "Maria", "Lucas", "Paula"];
+undefined
+listaDeNomes
+(4) ['Joana', 'Maria', 'Lucas', 'Paula']
+var listaDeNomes = ["Joana", "Maria", "Lucas", "Mateus", "Paula"]
+undefined
+listaDeNomes
+(5) ['Joana', 'Maria', 'Lucas', 'Mateus', 'Paula']
+listaDeNomes [0]
+'Joana'
+listaDeNomes [1]
+'Maria'
+listaDeNomes [2]
+'Lucas'
+listaDeNomes [3]
+'Mateus'
+listaDeNomes [4]
+'Paula'
+listaDeNomes.push("José");
+6
+listaDeNomes
+(6) ['Joana', 'Maria', 'Lucas', 'Mateus', 'Paula', 'José']
+listaDeNomes.length;
+6
+var tamanhoDaListaDeNomes = listaDeNomes.length;
+undefined
+tamanhoDaListaDeNomes
+6
+listaDeNomes[5]
+'José'
+listaDeNomes[listaDeNomes.length - 1]
+'José'
+var nomeDasCoresDaBandeiraDoEstado ["branca", "verde", "amarelo" ];
+VM1616:1 Uncaught SyntaxError: Unexpected token '['
+var nomeDasCoresDaBandeiraDoEstado = ["branca", "verde", "amarelo" ];
+undefined
+nomeDasCoresDaBandeiraDoEstado
+(3) ['branca', 'verde', 'amarelo']
+var tamanhoNomeDasCoresDaBandeiraDoEstado = nomeDasCoresDaBandeiraDoEstado.length
+undefined
+tamanhoNomeDasCoresDaBandeiraDoEstado
+3
+nomeDasCoresDaBandeiraDoEstado[length - 1]
+'amarelo'
+nomeDasCoresDaBandeiraDoEstado[length - 2]
+'verde'
+nomeDasCoresDaBandeiraDoEstado[length - 3]
+'branca'
+nomeDasCoresDaBandeiraDoEstado.length
+3
+nomeDasCoresDaBandeiraDoEstado[0]
+'branca'
+nomeDasCoresDaBandeiraDoEstado[1]
+'verde'
+nomeDasCoresDaBandeiraDoEstado[2]
+'amarelo'
+
+- Códigos usados na aula 2
+
+[2, 150, -1, 4.5]
+(4) [2, 150, -1, 4.5]
+[true, false, true]
+(3) [true, false, true]
+["Trybe", 25, true]
+(3) ['Trybe', 25, true]
+
+- Os códigos de uma array podem ser de varios tipos( strings, numéricos,booleanos)
+
+9) Strings
+
+Strings podem ser concatenadas e medidas.
+
+10) Estruturas de Repetição
+
+- definição: São codigos usados para fazer lista, tabuadas e coisas 
+que se repetem em determinado padrão.
+
+- variação do codigo: for(var contador = x; contador <= 9; contador = contador +1)
+
+for(var contador = x; contador <= 9; contador = contador++)
+
+- estrutura: 
+
+a)numéricos
+
+var numero = x
+for(var contador = 1; contador <= 9; contador++) {
+console.log(numero*contador); } 
+
+- codigos para números: (tabuada) 
+
+var numero = 7;
+for(var contador =1; contador <= 9; contador = contador + 1){
+    console.log("*")
+    console.log(numero*contador); 
+}
+
+7
+*
+14
+*
+21
+*
+28
+*
+35
+*
+42
+*
+49
+*
+56
+*
+63
+
+var numero = 7;
+for(var contador =1; contador <= 9; contador = contador + 1){
+    console.log("")
+    console.log(numero*contador);
+}
+    
+7
+ 
+14
+ 
+21
+ 
+28
+ 
+35
+ 
+42
+ 
+49
+ 
+56
+ 
+63
+
+- códigos para listas
+
+var listaDeNomes = ["Joana", "Maria", "Lucas"];
+
+for (var indice = 0; indice < listaDeNomes.length; indice++) {
+    var mensagem = "Boas vindas, " + listaDeNomes[indice] + "!";
+    console.log(mensagem)
+}
+
+- Entendendo a estrutura: "for", inicia a estrutura , 
+
+"(var indice = 0;",  determinamos a variavel = 0 pq é a
+posição inicial do array, e pq queremos passar por todas as posições do array."
+
+"indice < listadeNomes.length;" usamos ".length" pq queremos que funcione 
+para qualquer tamanho array, assim podemos atualizar o tamanho da lista sem 
+prejudicar seu funcionamento. Usamos o "<" ao inves do "<=" queremos que a 
+repetição pare quando o indice for 1 unidade menor que o tamanho do array.
+
+indice++: acrescentamos o incremento com ++ pq precisamos que o indice passe por 
+todas as posições do array, assim acrecentamos 1 unidade e fechamos o parentese 
+"indice++)"
+
+{ var mensagem = Boas vindas, " + listaDeNomes(indice) + "!";
+console.log(mensagem) }: abrimos a chave para inserir o código, começamos 
+pela variavel mensagem e atribuimos(=) a concatenação de palavras que queremos 
+na mensagem, " Boas vindas, " + listaDeNomes(indice) + "!".
+console.log(mensagem. 
+
+11) Funções
+
+- codigo função modelo
+
+a) function nomeDaFunção() {
+     // código que faz alguma
+     // coisa
+ }
+
+
+b) function nomeDaFunção() {
+    // código que faz alguma
+    // coisa
+
+    return resultado;
+ }
+
+c) function ligarDesligar(param1, param2) {
+    // código que faz alguma
+    // coisa
+
+    return resultado;
+ }
+
+- código de função modelo do carro
+
+var statusCarro = "desligado";
+var aceleracao = 0;
+var rotacaoDoVolante = 0;
+
+function ligarDesligar() {
+    if  (statusCarro === "desligado") {
+        statusCarro = "ligado";
+    } else {
+        statusCarro = "desligado";
+    }
+    
+    return statusCarro;
+}
+
+function acelerar(incremento) {
+    aceleracao = aceleracao + incremento;
+
+    return "Acelerando a " + aceleracao + "m/s²";
+}
+
+function frear(decremento) {
+     aceleracao = aceleracao - decremento;
+
+    return "Desacelerando Para " + aceleracao + "m/s²";
+}
+
+function girarVolante(anguloRotacao) {
+     rotacaoDoVolante = anguloRotacao;
+
+     return rotacaoDoVolante + "º";
+}
+
+12) Exercícios
+
+a) Não Entendi porra nenhuma
+
+b) o exercício manda achar todos os numeros primos maiores ou = a 2
+
+- código da função do exercício:
+
+function buscaNumeroPrimos(n) {
+
+    var numerosPrimos = [];
+
+for (var numeroAtual = 2; numeroAtual < n; numeroAtual++) {
+  var quantidadeDeDivisores = 0;
+
+  for(var numeroMenor = 2; numeroMenor < numeroAtual; numeroMenor++) {
+    if (numeroAtual % numeroMenor == 0) {
+      quantidadeDeDivisores ++;
+    }
+  }
+
+  if (quantidadeDeDivisores == 0) {
+    numerosPrimos.push(numeroAtual);
+  }
+}
+        
+
+  return numerosPrimos;
+}
+
+c) pede pra criar um busca palindromo
+
+- codigo do busca palíndromo:
+
+function ehPalindromo(palavra) {
+
+var palindromo = ""
+
+for(var index = palavra.length - 1; index >= 0; index--) {
+    palindromo += palavra[index]
+}
+
+if (palavra == palindromo) {
+  return "SIM, SOU UM PALÍNDROMO"
+} else {
+  return "INFELIZMENTE, NÃO SOU UM PALÍNDROMO"
+
+}    
+ 
+}
+
+function main() {
+    const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
+
+    const palavra = readLine();
+
+    const result = ehPalindromo(palavra);
+
+    ws.write(result + '\n');
+
+    ws.end();
+}
+
+13) códigos que eu tava afim de criar
+
+a) multiplicador de arrays:
+
+- se quiser add outros valores só trocar onde tem 2 pelo valor desejado
+
+- codigo:
+
+function multiplicaPorDois(numeros) {
+
+    var resultados = []
+
+for(var index = 0; index < numeros.length; index++) {
+  var elementoMultiplicadoPorDois = numeros[index] * 2
+    resultados.push(elementoMultiplicadoPorDois)
+}
+
+    return resultados;
+
+}
+
+a) desafio pratico 1 codigo
+
+function calculadoraAdicaoSubtracao(numero, outroNumero, operacao) {
+
+if(operacao == "+") {
+    return numero + outroNumero
+    
+}else if (operacao == "-") {
+    return numero - outroNumero
+    
+} else {
+    return 0
+    
+}   
+
+
+}
+function main() {
+    const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
+
+    const numero = parseInt(readLine().trim(), 10);
+
+    const outroNumero = parseInt(readLine().trim(), 10);
+
+    const operacao = readLine();
+
+    const result = calculadoraAdicaoSubtracao(numero, outroNumero, operacao);
+
+    ws.write(result + '\n');
+
+    ws.end();
+}
+
+b)
+
+c) codigo desafio prático 3
+
+function vezesLetraAparece(frase, letra) {
+    
+var resultado = 0;
+
+for(var letraVezes = 0; letraVezes < frase.length; letraVezes++) {
+    if (frase[letraVezes] == letra) {
+        resultado++
+    }
+}
+
+return resultado;
+
+}
+function main() {
+    const ws = fs.createWriteStream(process.env.OUTPUT_PATH);
+
+    const frase = readLine();
+
+    const letra = readLine();
+
+    const result = vezesLetraAparece(frase, letra);
+
+    ws.write(result + '\n');
+
+    ws.end();
+}
